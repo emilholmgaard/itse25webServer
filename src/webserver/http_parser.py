@@ -1,6 +1,6 @@
 def parse_request(request):
     try:
-        lines = request.split('\r\n')
+        lines = request.split("\r\n")
         request_line = lines[0]
         parts = request_line.split()
 
@@ -18,7 +18,7 @@ def parse_request(request):
 
 
 def is_valid_request(method, version):
-    valid_methods = ['GET']
-    valid_versions = ['HTTP/1.0', 'HTTP/1.1']
+    valid_methods = ["GET"]
+    valid_versions = ["HTTP/1.0", "HTTP/1.1"]
 
     return method in valid_methods and version in valid_versions

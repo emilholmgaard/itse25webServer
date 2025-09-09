@@ -10,6 +10,7 @@ def create_success_response(content, content_type):
         f"{content}"
     )
 
+
 def create_error_response(status_code, message):
     error_files = {
         400: 'html/400.html',
